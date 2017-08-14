@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/third-party/bootstrap/css/bootstrap.css">
+    <title>page example - project hello</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1><img src="./saber.jpeg" class="saber"/>：Hello,World !</h1>
+        <p>这是example页面</p>
+        <p>
+            1. 开发服务器启动时默认打开example页面，您可以通过修改&lt;project&gt;/config/dev.config.js文件中的'home'属性来改变默认打开页面。或者运行命令
+        </p>
+        <pre>sbr run [pageName] //eg: sbr run example/normal</pre>
+        <p>
+            2. 更多的命令可以通用运行 '<strong><i>sbr -h</i></strong> 查看'.
+        </p>
+        <p>
+            3.下面是一些有用的examples.
+        </p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="/example/custom.html">
+                <h4>默认页面</h4>
+                <div>webpack自动引入index.js</div>
+                <div>同时index.js自动引入index.less</div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/example/tradition.html">
+                <h4>传统的开发方式</h4>
+                <div>使用一些传统的开发方式来进行工程开发</div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/example/proxy.html">
+                <h4>使用代理服务器</h4>
+                <div>使用代理服务器进行开发</div>
+                <div>配置 [projectName]/config/dev.config.js 中的proxyTables来进行代理服务器配置</div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/example/template.html">
+                <h4>模板化开发</h4>
+                <div>传统的模板化开发方式</div>
+                <div>使用underscore模板</div>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="/example/sprite.html">
+                <h4>使用精灵图</h4>
+                <div>在png图片的后面加上?sprite的图片请求会自动打包到精灵图里</div>
+            </a>
+        </li>
+        <!--vue:true react:false-->
+                <li class="list-group-item">
+            <a href="/example/vue.html">
+                <h4>使用vue</h4>
+                <div>saber-cli已经为您默认安装一些常用的vue依赖包</div>
+                <div>配置 [projectName]/config/dev.config.js 中的vendors来减少你项目中的文件大小</div>
+            </a>
+        </li>
+                    </ul>
+</div>
+</body>
+</html>

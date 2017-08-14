@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../assets/third-party/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./test.less">
+    <link rel="stylesheet" href="./test.css">
+    <title>example/tradition</title>
+</head>
+<body>
+    <div class="container">
+        <div class="back-top">
+            <a href="/example.html">返回</a>
+        </div>
+        <div class="jumbotron">
+            <div class="test-css">来自 test.css 的样式</div>
+            <div class="test-less">来自 test.less 的样式</div>
+            <div id="testJs">来自 test.js 的样式</div>
+        </div>
+        <div class="jumbotron">
+usage:
+            <pre>
+&lt;script src='./test.js' >&lt;/script>
+&lt;script src='./test.js?source' >&lt;/script>> //不编译此文件，用于使用第三方库的文件。
+&lt;link href='./test.css' />
+&lt;link href='./test.less' />
+&lt;script src='./test.js?ie=10' >&lt;/script> //ie 10
+&lt;script src='./test.js?ie=10-' >&lt;/script> //ie9 ie8 ....
+&lt;script src='./test.js?ie=10+' >&lt;/script> // ie10 ,ie11 ...
+&lt;script src='./test.js?ie=10-11' >&lt;/script> //ie10 ,ie11
+            </pre>
+features in developing
+<pre>
+&lt;script src='./test.js?inline' >&lt;/script> //将文件资源注入html
+</pre>
+        </div>
+    </div>
+    <script src="./test.js"></script>
+    <script src="./test_source.js?source"></script>
+    <script src="./ie.js?ie=10&resource"></script>
+    <script src="./ie.js?ie=10-&resource"></script>
+    <script src="./ie.js?ie=10+&resource"></script>
+    <script src="./ie.js?ie=10-11&resource"></script>
+</body>
+</html>
