@@ -10,7 +10,7 @@ module.exports = Object.assign(baseConfig, {
         // }
     },
     //开发服务器运行时默认打开的浏览器页面
-    home: 'example',
+    home: 'travel/gl',
     //开发服务器运行时的端口号
     port: 9091
 });
