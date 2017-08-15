@@ -4,7 +4,7 @@ module.exports = Object.assign(baseConfig, {
     //打包目录默认在dist下面
     //pagePath表示页面打包的dist下面的什么目录，
     //如果需要直接打包到dist下面，则为空
-    pagePath: 'views',
+    pagePath: '',
     //assetPath 表示资源打包到dist下面的什么目录
     //如果需要直接打包到dist下面，则为空
     assetPath: 'assets',
